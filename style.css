@@ -19,24 +19,32 @@ body{
     opacity: 0.4;
 }
 .credits{
-    font-size: 1.2em;
+    font-size: 1em;
     color: white;
     position: absolute;
     bottom: 0; 
     left: 1%;
 }
 
+@font-face{
+    font-family:jjk;
+    src:url('media/jjkfont.ttf');
+}
+
 .rightside{
     background-color: black;
-    height: 100vh;
+    height: auto;
     width: 60vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.rightside div{
+/* .rightside div{
     border: 2px solid red;
-}
+} */
 
 .logo{
     width: 30vw;
@@ -47,5 +55,59 @@ body{
     height: auto;
 }
 
+.desc{
+    font-family: jjk, sans-serif;
+    font-size: 2em;
+    width: 40vw;
+    height: auto;
+    color: white;
+    text-align: center;
+    /* padding: 0 10%; */
+    flex: 1;
+}
+.form{
+    background-color: white;
+    font-family: jjk, sans-serif;
+    font-size: 2em;
+    width: 60vw;
+    height:auto;
+    padding: 0.4vw 2vw;
+    display: flex;
+    flex-direction: column;
+    
+    flex: 1;
+}
+.form div{
+    flex: 1;
+}
+/* #table{
+    display: flex; 
+    justify-content: center;
+} */
+.form table{
+    font-size: 0.7em;
+    width: 40vw;
+}
+.form table tr td input{
+    border: 2px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
+}
+/* .form table tr td input:invalid{
+    border-color: red;
+} */
+.form table tr td input:valid {
+    border-color: green;
+  }
 
-/* continue on the "small desc" and then the "form html + css" */
+.submit{
+    font-family: jjk, sans-serif;
+    font-size: 1.2em;
+    width: 56vw;
+    height:auto;
+    padding: 1vw 0.7vw;
+    flex: 1;
+    color: white;
+}
+/* continue on the "small desc + make use of the custom font" and then the "form html + css" */

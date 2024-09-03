@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info Extortion</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
     <div class="leftside">
@@ -14,6 +15,48 @@
     <div class="rightside">
         <div class= "logo">
             <img src="media/jjklogo.png" alt="logo">
+        </div>
+        <div class="desc">
+            <p class="desc_text">
+                Register to join in the fight against Sukuna.</p>
+            <p class="desc_text">
+                Do not let Gojo die in vain.</p>
+        </div>
+        <div class="form">
+            <div style="text-align: left; margin-top: 0;">Sign Up Now...</div>
+            <div id="table">
+                <table><form action="#" method="POST">
+                    <tr>
+                        <td>FIRST NAME</td>
+                        <td>LAST NAME</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="firstname" id="firstname" placeholder="Yuji" pattern="[A-Za-z\s]+" required></td>
+                        <td><input type="text" name="lastname" id="lastname" placeholder="Itadori" pattern="[A-Za-z\s]+" required></td>
+                    </tr>
+                    <tr>
+                        <td>EMAIL</td>
+                        <td>PHONE NUMBER</td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" id="email" placeholder="yujiitadori@gmail.com" pattern="^[A-Za-z0-9.-]+@[A-Za-z].[A-za-z]{2,3}" required></td>
+                        <td><input type="tel" name="phone" id="phone" placeholder="8123 4567" pattern="[0-9\s]+" required></td>
+                    </tr>
+                    <tr>
+                        <td>PASSWORD</td>
+                        <td>CONFIRM PASSWORD</td>
+                    </tr>  
+                    <tr>
+                        <td><input type="password" name="password" id="password" placeholder="******" minlength="6" maxlength="12" pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[\W_]).{8,}" required></td>
+                        <td><input type="password" name="confirmpassword" id="confirmpassword" placeholder="******" minlength="6" maxlength="12" pattern="(?=.*[a-zA-Z])(?=.*\d)(?=.*[\W_]).{8,}" required></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="submit">
+            <button type="submit" class="w3-button w3-yellow" style="border-radius: 12px;">Register</button>
+            </form>
+            <p>Already registered? <a href="https://youtu.be/Mwgsi5Rz0_w?si=4bbxvvUTepMMct7Y">Log in</a></p>
         </div>
     </div>
     <script src="script.js"></script>
